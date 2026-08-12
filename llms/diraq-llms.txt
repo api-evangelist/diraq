@@ -1,0 +1,53 @@
+# Diraq
+
+> Diraq is a quantum computing company building processors from silicon spin qubits —
+> quantum information encoded in the spin of single electrons held in quantum dots formed
+> inside CMOS-transistor-derived structures, so qubits can be fabricated on standard
+> semiconductor foundry lines. Spun out of UNSW Sydney in 2022 by Professor Andrew Dzurak.
+> Headquartered in Sydney, Australia, with offices in Palo Alto, California and Boston,
+> Massachusetts.
+
+## Status of the API surface
+
+**Diraq publishes no public API.** As of 2026-08-12 there is no developer portal, no
+documentation site, no API reference, no SDK, no machine-readable specification (OpenAPI,
+AsyncAPI, GraphQL SDL, JSON Schema, Postman collection), no webhook surface, no MCP server,
+and no A2A agent card anywhere on diraq.com or any resolvable subdomain.
+
+`api.diraq.com` exists in DNS but is a CNAME to `ghs.googlehosted.com` (Google Workspace web
+forwarding). It 302-redirects its root to the marketing site and returns 404 on every API
+path probed. It is not an API host.
+
+Diraq is a pre-commercial hardware and research organization. Company statements name cloud
+access to its processors as the intended commercial pathway, and the first commercial product
+is targeted toward the end of the decade — so a developer surface is plausible in future, but
+none exists today. Do not infer endpoints, keys, or a quantum-job API from this profile.
+
+## Company
+
+- [Home](https://www.diraq.com/): Company overview and technology positioning.
+- [Technology](https://www.diraq.com/technology): Silicon spin qubits, CMOS fabrication approach.
+- [About](https://www.diraq.com/about): Company background, leadership, locations.
+- [Contact](https://www.diraq.com/contact): The only inbound channel; there is no developer support surface.
+
+## Research and news
+
+- [Research papers](https://www.diraq.com/research-papers): Published peer-reviewed work on spin qubit fidelity, hole spin qubits, cryo-CMOS control, and shuttling.
+- [Research insights](https://www.diraq.com/research-insights): Research program summaries.
+- [Newsdesk](https://www.diraq.com/newsdesk): Media releases, technical blog, thought leadership.
+- [Newsdesk RSS](https://www.diraq.com/newsdesk?format=rss): Machine-readable feed — the only structured data Diraq publishes.
+
+## Legal
+
+- [Privacy policy](https://www.diraq.com/privacy-policy)
+- [Terms and conditions](https://www.diraq.com/terms-and-conditions)
+
+## Optional
+
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/diraq/refs/heads/main/security/diraq-domain-security.yml): TLS 1.3, HSTS (max-age 15552000), DNSSEC enabled, SPF and DMARC present (policy: quarantine), no CAA records.
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/diraq/refs/heads/main/well-known/diraq-well-known.yml): All seven `/.well-known/` paths return 404. A recorded absence.
+
+---
+generated: '2026-08-12'
+method: generated
+source: apis.yml + repo artifacts (no provider-published llms.txt; https://www.diraq.com/llms.txt returned 404)

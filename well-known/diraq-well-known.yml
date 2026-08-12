@@ -1,0 +1,49 @@
+generated: '2026-08-12'
+method: probed
+source: live HTTPS probes of https://www.diraq.com/.well-known/*
+note: >-
+  Every well-known path probed returned 404. No WellKnown or SecurityTxt pointer is
+  emitted in apis.yml — this file records a verified ABSENCE, not a served surface.
+  The Squarespace-hosted marketing site answers unknown paths with a 404 status
+  carrying the site's HTML 404 page (119KB), so a non-404 body would still need to be
+  parsed before it could be trusted. The apex host diraq.com 301-redirects to
+  www.diraq.com for every path.
+host: www.diraq.com
+apex_redirects_to_www: true
+hit_count: 0
+probes:
+- path: /.well-known/security.txt
+  url: https://www.diraq.com/.well-known/security.txt
+  status: 404
+  content_type: application/json
+  file: null
+- path: /.well-known/openid-configuration
+  url: https://www.diraq.com/.well-known/openid-configuration
+  status: 404
+  content_type: text/html
+  file: null
+- path: /.well-known/oauth-authorization-server
+  url: https://www.diraq.com/.well-known/oauth-authorization-server
+  status: 404
+  content_type: text/html
+  file: null
+- path: /.well-known/api-catalog
+  url: https://www.diraq.com/.well-known/api-catalog
+  status: 404
+  content_type: text/html
+  file: null
+- path: /.well-known/ai-plugin.json
+  url: https://www.diraq.com/.well-known/ai-plugin.json
+  status: 404
+  content_type: text/html
+  file: null
+- path: /.well-known/agent-card.json
+  url: https://www.diraq.com/.well-known/agent-card.json
+  status: 404
+  content_type: text/html
+  file: null
+- path: /.well-known/agent.json
+  url: https://www.diraq.com/.well-known/agent.json
+  status: 404
+  content_type: text/html
+  file: null

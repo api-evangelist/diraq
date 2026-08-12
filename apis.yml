@@ -1,7 +1,18 @@
 aid: diraq
 name: Diraq
-description: 'Diraq is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Diraq is a quantum computing company headquartered in Sydney, Australia,
+  with offices in Palo Alto, California and Boston, Massachusetts. Spun out of UNSW
+  Sydney in 2022 by Professor Andrew Dzurak, Diraq builds quantum processors from silicon
+  spin qubits — quantum information encoded in the spin of single electrons held in
+  quantum dots formed inside structures derived from conventional CMOS transistors,
+  so the qubits can be fabricated on standard semiconductor foundry lines. The company
+  works with imec, NVIDIA and Quantum Machines, has advanced through DARPA''s utility-scale
+  quantum computing initiative, and targets a first commercial processor toward the
+  end of the decade. Diraq is a pre-commercial hardware and research organization: as
+  of this profile it publishes no developer program, public API, SDK, or machine-readable
+  contract of any kind, and its stated commercial pathway — cloud access to its processors
+  — is still on the roadmap rather than in market.'
+image: https://www.diraq.com/favicon.ico
 url: https://raw.githubusercontent.com/api-evangelist/diraq/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +23,12 @@ created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
+- Quantum Computing
+- Semiconductors
+- Deep Tech
+- Hardware
+- Research
+- Australia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,54 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/diraq-domain-security.yml
+- type: LLMsTxt
+  url: llms/diraq-llms.txt
 - type: Website
+  url: https://www.diraq.com/
+- type: Blog
+  url: https://www.diraq.com/newsdesk
+- type: BlogRSS
+  url: https://www.diraq.com/newsdesk?format=rss
+- type: PrivacyPolicy
+  url: https://www.diraq.com/privacy-policy
+- type: TermsOfService
+  url: https://www.diraq.com/terms-and-conditions
+- type: Support
+  url: https://www.diraq.com/contact
+- type: About
+  url: https://www.diraq.com/about
+- type: Research
+  url: https://www.diraq.com/research-papers
+- type: SecondaryMarket
   url: https://www.hiive.com/securities/diraq-stock
+x-enrichment:
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Diraq is a pre-commercial silicon-spin-qubit hardware company whose entire public
+    web presence is a nine-page Squarespace marketing site — home, technology, about,
+    contact, research papers, research insights, newsdesk, privacy, terms — with no
+    developer, docs, or API page in its own sitemap; the one API-shaped hostname,
+    api.diraq.com, is a CNAME to ghs.googlehosted.com that 302-redirects to the
+    marketing site and 404s every spec path.
+  evidence:
+  - url: https://www.diraq.com/sitemap.xml
+    status: 200
+  - url: https://api.diraq.com/openapi.json
+    status: 404
+  - url: https://api.diraq.com/
+    status: 302
+  - url: https://www.diraq.com/llms.txt
+    status: 404
+  - url: https://www.diraq.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.diraq.com/docs
+    status: 404
+  checked: '2026-08-12'
