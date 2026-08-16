@@ -1,0 +1,21 @@
+{
+  "repo": "diraq",
+  "feeds": [
+    {
+      "source": "https://www.diraq.com/",
+      "feed_url": "https://www.diraq.com/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://www.diraq.com/newsdesk",
+      "feed_url": "https://www.diraq.com/newsdesk",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-15T12:22:01Z"
+}
