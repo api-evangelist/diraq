@@ -12,6 +12,17 @@ description: 'Diraq is a quantum computing company headquartered in Sydney, Aust
   of this profile it publishes no developer program, public API, SDK, or machine-readable
   contract of any kind, and its stated commercial pathway — cloud access to its processors
   — is still on the roadmap rather than in market.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.diraq.com/favicon.ico
 url: https://raw.githubusercontent.com/api-evangelist/diraq/refs/heads/main/apis.yml
 x-type: company
